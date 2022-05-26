@@ -6,6 +6,9 @@ const Api = require("./api.js");
 
 const { engine } = require('express-handlebars')
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 const engineFn = engine({
     extname: '.hbs',
     defaultLayout: `${__dirname}/views/index.hbs`,
@@ -74,12 +77,5 @@ app.get("/", (req, res) => {
 });
 
 
-
-
-
-
-
-
-
-
+app.use(express.static("public"));
 app.use('/api', router);

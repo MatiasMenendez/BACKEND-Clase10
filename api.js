@@ -27,7 +27,7 @@ class Api {
             const longitud = this.products.length;
             longitud ? newProduct.id = this.products[longitud - 1].id + 1 : newProduct.id = 1 ;
             this.products.push(newProduct);
-            res.redirect(301, '/api')
+            res.redirect(301, '/api/products')
         } else {
             return res.status(400).send({ error: "Not found" });
         }
