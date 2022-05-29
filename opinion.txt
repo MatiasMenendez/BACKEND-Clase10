@@ -1,0 +1,7 @@
+Encuentro los tres motores de plantillas muy utiles.
+Cada uno tiene su sintaxis especial y sus modos de 
+distribuir los somponents pero particularmente el 
+que mas me interesa es handlebars por su simplicidad.
+Al momento de elegir alguno me inclinaria por este 
+debido a que se puede generar codigo mas rapido y se
+pueden detectar y arreglar problemas de una manera mas veloz.

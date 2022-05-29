@@ -1,7 +1,7 @@
-<h2>Ingrese un producto</h2>
+<h2>Register a product</h2>
     <form action="/api/products" method="post" class="myForm" enctype="application/json">
         <div class="form-group">
-            <label for="title">name</label>
+            <label for="title">Name</label>
             <input type="text" name="title" class="form-control"/>
         </div>
         <div class="form-group">
@@ -12,6 +12,6 @@
             <label for="thumbnail">Insert product link</label>
             <input type="text" name="thumbnail" class="form-control" min="0" max="120"/>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-primary">Send</button>
     </form>
-    <a href="/api/products">Ver productos ingresados</a>
+    <a href="/api/products">See products registered</a>

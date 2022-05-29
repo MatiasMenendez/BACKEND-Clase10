@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document with ejs</title>
+    <%- include("partials/head.ejs"); %>
+</head>
+<body>
+    <h2 class="title">Ingres your product</h2>
+    <form action="api/products" method="post" class="myForm" enctype="application/json">
+        <div class="form-group">
+            <label for="title">Name</label>
+            <input type="text" name="title" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" name="price" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="thumbnail">Product image link</label>
+            <input type="text" name="thumbnail" class="form-control" min="0" max="120"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <a href="/products">See products list</a>
+    
+</body>
+</html>
